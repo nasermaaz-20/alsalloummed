@@ -1,0 +1,176 @@
+{
+  "source": "docs/sources/DOC-20261020-WA0098.pdf",
+  "method": "Median RGB of named regions in 1.5x rendered PDF page; representative samples, not official brand specifications.",
+  "render_size": [
+    447,
+    629
+  ],
+  "samples": {
+    "navy_ring": {
+      "box": [
+        101,
+        280,
+        111,
+        310
+      ],
+      "hex": "#253B59"
+    },
+    "blue_enamel": {
+      "box": [
+        141,
+        269,
+        150,
+        286
+      ],
+      "hex": "#025D9C"
+    },
+    "cyan_enamel": {
+      "box": [
+        238,
+        205,
+        255,
+        213
+      ],
+      "hex": "#96E2FA"
+    },
+    "silver_letter": {
+      "box": [
+        218,
+        282,
+        237,
+        293
+      ],
+      "hex": "#F1F2F4"
+    },
+    "silver_rim": {
+      "box": [
+        315,
+        280,
+        319,
+        295
+      ],
+      "hex": "#F8F9FB"
+    },
+    "page_background": {
+      "box": [
+        10,
+        10,
+        25,
+        25
+      ],
+      "hex": "#F5F5F5"
+    }
+  },
+  "contrast_pairs": [
+    {
+      "foreground": "#182C46",
+      "background": "#FFFFFF",
+      "ratio": 14.117
+    },
+    {
+      "foreground": "#4B6078",
+      "background": "#FFFFFF",
+      "ratio": 6.474
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#006EA6",
+      "ratio": 5.554
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#005784",
+      "ratio": 7.788
+    },
+    {
+      "foreground": "#182C46",
+      "background": "#25B9E3",
+      "ratio": 6.136
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#25B9E3",
+      "ratio": 2.301
+    },
+    {
+      "foreground": "#182C46",
+      "background": "#F4F7FA",
+      "ratio": 13.13
+    },
+    {
+      "foreground": "#4B6078",
+      "background": "#F4F7FA",
+      "ratio": 6.022
+    },
+    {
+      "foreground": "#006EA6",
+      "background": "#FFFFFF",
+      "ratio": 5.554
+    },
+    {
+      "foreground": "#006EA6",
+      "background": "#F4F7FA",
+      "ratio": 5.166
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#253B59",
+      "ratio": 11.361
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#025D9C",
+      "ratio": 6.889
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#014875",
+      "ratio": 9.611
+    },
+    {
+      "foreground": "#96E2FA",
+      "background": "#253B59",
+      "ratio": 7.874
+    },
+    {
+      "foreground": "#025D9C",
+      "background": "#F4F7FA",
+      "ratio": 6.407
+    },
+    {
+      "foreground": "#708399",
+      "background": "#F4F7FA",
+      "ratio": 3.62
+    },
+    {
+      "foreground": "#B42318",
+      "background": "#FFFFFF",
+      "ratio": 6.574
+    },
+    {
+      "foreground": "#087443",
+      "background": "#FFFFFF",
+      "ratio": 5.85
+    },
+    {
+      "foreground": "#815900",
+      "background": "#FFFFFF",
+      "ratio": 6.246
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#708399",
+      "ratio": 3.892
+    },
+    {
+      "foreground": "#708399",
+      "background": "#FFFFFF",
+      "ratio": 3.892
+    },
+    {
+      "foreground": "#DCE4EB",
+      "background": "#FFFFFF",
+      "ratio": 1.285
+    }
+  ]
+}

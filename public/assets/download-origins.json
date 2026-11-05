@@ -1,0 +1,32 @@
+[
+  {
+    "path": "public/assets/maxx.webp",
+    "origin": "https://maxxortho.com/wp-content/uploads/2026/05/Blue-with-Orange-Ribbon-scaled.webp",
+    "sha256": "4209ce6a0a11a6c484ed7f9ecb1e759295b127ebb4c4a78a738d89c33e196a4f"
+  },
+  {
+    "path": "public/fonts/alexandria-1.woff2",
+    "origin": "https://fonts.gstatic.com/s/alexandria/v6/UMBXrPdDqW66y0Y2usFeaiLdA4M5.woff2",
+    "sha256": "ad5f96f2ed804f3a3ee0e4b41d5cb56eb52777adec0d9f838cd72fcabe78112a"
+  },
+  {
+    "path": "public/fonts/alexandria-0.woff2",
+    "origin": "https://fonts.gstatic.com/s/alexandria/v6/UMBXrPdDqW66y0Y2usFeaijdA4M5.woff2",
+    "sha256": "e8d8ca61d4da1a1a38b9454dbae92be589185efc7af0af6046f6a11c60476e99"
+  },
+  {
+    "path": "public/fonts/alexandria-2.woff2",
+    "origin": "https://fonts.gstatic.com/s/alexandria/v6/UMBXrPdDqW66y0Y2usFeaiPdA4M5.woff2",
+    "sha256": "e6bf8237f75aba690223ac20ab6a35bd37677aff57da6af9aad58c2d0f918e40"
+  },
+  {
+    "path": "public/fonts/alexandria-3.woff2",
+    "origin": "https://fonts.gstatic.com/s/alexandria/v6/UMBXrPdDqW66y0Y2usFeai3dAw.woff2",
+    "sha256": "98ccec0bc3c456332f8fd0fcaf81d26a4e010b7fc093f9781938f976df9ffbc4"
+  },
+  {
+    "path": "public/fonts/OFL.txt",
+    "origin": "https://raw.githubusercontent.com/google/fonts/main/ofl/alexandria/OFL.txt",
+    "sha256": "56372aed19c2701f50e6e784110af55bf8796ed51648805324ad1adb0a3860bb"
+  }
+]

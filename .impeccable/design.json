@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T23:22:09.683Z",
+  "title": "Design System: Alsalloum Medical",
+  "extensions": {
+    "colorMeta": {
+      "brand-navy": {
+        "role": "primary",
+        "displayName": "الكحلي المؤسسي",
+        "canonical": "#253b59",
+        "tonalRamp": [
+          "oklch(15% 0.05975 256.42)",
+          "oklch(27% 0.05975 256.42)",
+          "oklch(39% 0.05975 256.42)",
+          "oklch(51% 0.05975 256.42)",
+          "oklch(63% 0.05975 256.42)",
+          "oklch(75% 0.05975 256.42)",
+          "oklch(87% 0.05975 256.42)",
+          "oklch(95% 0.05975 256.42)"
+        ]
+      },
+      "brand-blue": {
+        "role": "primary",
+        "displayName": "الأزرق العملي",
+        "canonical": "#025d9c",
+        "tonalRamp": [
+          "oklch(15% 0.12535 248.16)",
+          "oklch(27% 0.12535 248.16)",
+          "oklch(39% 0.12535 248.16)",
+          "oklch(51% 0.12535 248.16)",
+          "oklch(63% 0.12535 248.16)",
+          "oklch(75% 0.12535 248.16)",
+          "oklch(87% 0.12535 248.16)",
+          "oklch(95% 0.12535 248.16)"
+        ]
+      },
+      "brand-cyan": {
+        "role": "secondary",
+        "displayName": "السماوي الواضح",
+        "canonical": "#25b9e3",
+        "tonalRamp": [
+          "oklch(15% 0.12920 223.08)",
+          "oklch(27% 0.12920 223.08)",
+          "oklch(39% 0.12920 223.08)",
+          "oklch(51% 0.12920 223.08)",
+          "oklch(63% 0.12920 223.08)",
+          "oklch(75% 0.12920 223.08)",
+          "oklch(87% 0.12920 223.08)",
+          "oklch(95% 0.12920 223.08)"
+        ]
+      },
+      "brand-ice": {
+        "role": "secondary",
+        "displayName": "الجليدي المضيء",
+        "canonical": "#96e2fa",
+        "tonalRamp": [
+          "oklch(15% 0.08185 219.80)",
+          "oklch(27% 0.08185 219.80)",
+          "oklch(39% 0.08185 219.80)",
+          "oklch(51% 0.08185 219.80)",
+          "oklch(63% 0.08185 219.80)",
+          "oklch(75% 0.08185 219.80)",
+          "oklch(87% 0.08185 219.80)",
+          "oklch(95% 0.08185 219.80)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "الأبيض",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(27% 0.00000 0.00)",
+          "oklch(39% 0.00000 0.00)",
+          "oklch(51% 0.00000 0.00)",
+          "oklch(63% 0.00000 0.00)",
+          "oklch(75% 0.00000 0.00)",
+          "oklch(87% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ]
+      },
+      "surface-subtle": {
+        "role": "neutral",
+        "displayName": "الفضي البارد",
+        "canonical": "#f4f7fa",
+        "tonalRamp": [
+          "oklch(15% 0.00513 247.88)",
+          "oklch(27% 0.00513 247.88)",
+          "oklch(39% 0.00513 247.88)",
+          "oklch(51% 0.00513 247.88)",
+          "oklch(63% 0.00513 247.88)",
+          "oklch(75% 0.00513 247.88)",
+          "oklch(87% 0.00513 247.88)",
+          "oklch(95% 0.00513 247.88)"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "الحبر الكحلي",
+        "canonical": "#182c46",
+        "tonalRamp": [
+          "oklch(15% 0.05454 255.56)",
+          "oklch(27% 0.05454 255.56)",
+          "oklch(39% 0.05454 255.56)",
+          "oklch(51% 0.05454 255.56)",
+          "oklch(63% 0.05454 255.56)",
+          "oklch(75% 0.05454 255.56)",
+          "oklch(87% 0.05454 255.56)",
+          "oklch(95% 0.05454 255.56)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "الحبر الهادئ",
+        "canonical": "#4b6078",
+        "tonalRamp": [
+          "oklch(15% 0.04654 252.13)",
+          "oklch(27% 0.04654 252.13)",
+          "oklch(39% 0.04654 252.13)",
+          "oklch(51% 0.04654 252.13)",
+          "oklch(63% 0.04654 252.13)",
+          "oklch(75% 0.04654 252.13)",
+          "oklch(87% 0.04654 252.13)",
+          "oklch(95% 0.04654 252.13)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "الفاصل الهادئ",
+        "canonical": "#dce4eb",
+        "tonalRamp": [
+          "oklch(15% 0.01286 244.26)",
+          "oklch(27% 0.01286 244.26)",
+          "oklch(39% 0.01286 244.26)",
+          "oklch(51% 0.01286 244.26)",
+          "oklch(63% 0.01286 244.26)",
+          "oklch(75% 0.01286 244.26)",
+          "oklch(87% 0.01286 244.26)",
+          "oklch(95% 0.01286 244.26)"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "أزرق المرور",
+        "canonical": "#014875",
+        "tonalRamp": [
+          "oklch(15% 0.09787 245.34)",
+          "oklch(27% 0.09787 245.34)",
+          "oklch(39% 0.09787 245.34)",
+          "oklch(51% 0.09787 245.34)",
+          "oklch(63% 0.09787 245.34)",
+          "oklch(75% 0.09787 245.34)",
+          "oklch(87% 0.09787 245.34)",
+          "oklch(95% 0.09787 245.34)"
+        ]
+      },
+      "control-border": {
+        "role": "neutral",
+        "displayName": "حد التحكم",
+        "canonical": "#708399",
+        "tonalRamp": [
+          "oklch(15% 0.04030 252.25)",
+          "oklch(27% 0.04030 252.25)",
+          "oklch(39% 0.04030 252.25)",
+          "oklch(51% 0.04030 252.25)",
+          "oklch(63% 0.04030 252.25)",
+          "oklch(75% 0.04030 252.25)",
+          "oklch(87% 0.04030 252.25)",
+          "oklch(95% 0.04030 252.25)"
+        ]
+      },
+      "soft-blue": {
+        "role": "neutral",
+        "displayName": "الأزرق الخفيف",
+        "canonical": "#eaf3fa",
+        "tonalRamp": [
+          "oklch(15% 0.01345 240.95)",
+          "oklch(27% 0.01345 240.95)",
+          "oklch(39% 0.01345 240.95)",
+          "oklch(51% 0.01345 240.95)",
+          "oklch(63% 0.01345 240.95)",
+          "oklch(75% 0.01345 240.95)",
+          "oklch(87% 0.01345 240.95)",
+          "oklch(95% 0.01345 240.95)"
+        ]
+      },
+      "light-hover": {
+        "role": "neutral",
+        "displayName": "سطح المرور الفاتح",
+        "canonical": "#eaf6fc",
+        "tonalRamp": [
+          "oklch(15% 0.01507 228.96)",
+          "oklch(27% 0.01507 228.96)",
+          "oklch(39% 0.01507 228.96)",
+          "oklch(51% 0.01507 228.96)",
+          "oklch(63% 0.01507 228.96)",
+          "oklch(75% 0.01507 228.96)",
+          "oklch(87% 0.01507 228.96)",
+          "oklch(95% 0.01507 228.96)"
+        ]
+      },
+      "footer-navy": {
+        "role": "neutral",
+        "displayName": "كحلي التذييل",
+        "canonical": "#1b2e47",
+        "tonalRamp": [
+          "oklch(15% 0.05212 255.72)",
+          "oklch(27% 0.05212 255.72)",
+          "oklch(39% 0.05212 255.72)",
+          "oklch(51% 0.05212 255.72)",
+          "oklch(63% 0.05212 255.72)",
+          "oklch(75% 0.05212 255.72)",
+          "oklch(87% 0.05212 255.72)",
+          "oklch(95% 0.05212 255.72)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "العنوان الرئيسي",
+        "purpose": "قاعدة عامة؛ التعديلات الفعلية بحسب عرض الشاشة واللغة موثقة في DESIGN.md."
+      },
+      "headline": {
+        "displayName": "عنوان القسم",
+        "purpose": "العناوين الثانية مع تعديلات إنكليزية محلية."
+      },
+      "title": {
+        "displayName": "عنوان المحتوى",
+        "purpose": "قاعدة h3؛ بعض المكونات تغير الحجم."
+      },
+      "body": {
+        "displayName": "النص الأساسي",
+        "purpose": "الفقرات العامة؛ الإنكليزية بارتفاع سطر 1.75."
+      },
+      "label": {
+        "displayName": "الإجراء",
+        "purpose": "الأزرار والروابط النصية."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "intro",
+        "value": "620ms; translateY 12px → 0; stagger 55ms; outExpo",
+        "purpose": "عناصر data-intro؛ نطاق محلي ينظف بـscope.revert()."
+      },
+      {
+        "name": "mobile-menu",
+        "value": "280ms; translateX ±10px → 0; stagger 25ms; outExpo",
+        "purpose": "العلامة تتبع اللغة؛ تنظيف النطاق واستعادة overflow السابق."
+      },
+      {
+        "name": "case-viewer",
+        "value": "220ms; translateY 8px → 0; opacity .92 → 1; outExpo",
+        "purpose": "فتح الحالة؛ تنظيف النطاق واستعادة overflow السابق."
+      },
+      {
+        "name": "state-transition",
+        "value": "background-color 180ms; color 180ms; transform 140ms",
+        "purpose": "الأزرار؛ الضغط يزيح 1px للأسفل."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce; Anime.js skipped; CSS duration .01ms",
+        "purpose": "لا stagger أو تأخير وصول للمحتوى؛ يبقى المحتوى ظاهراً في CSS الأساسي."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-max",
+        "value": "389px"
+      },
+      {
+        "name": "tablet-min",
+        "value": "640px"
+      },
+      {
+        "name": "wide-content-min",
+        "value": "900px"
+      },
+      {
+        "name": "desktop-nav-min",
+        "value": "1100px"
+      },
+      {
+        "name": "large-min",
+        "value": "1400px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "إجراء طلب عرض سعر؛ اللون بحسب سطح الاستخدام.",
+      "html": "<a class=\"ds-button\" href=\"#enquiry\" dir=\"rtl\"><span>اطلب عرض سعر</span><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:52px;padding:14px 22px;border:0;border-radius:8px;font-weight:500;font-size:.94rem;line-height:1.65;text-align:center;text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,transform .14s;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-button:active{transform:translateY(1px)}.ds-button:disabled{cursor:default;opacity:.4;}.ds-button{background:var(--brand-blue,#025d9c);color:#fff}.ds-button:hover{background:#014875}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-button,.ds-link,.ds-filter,.ds-row .ds-arrow{transition-duration:.01ms!important;}}"
+    },
+    {
+      "name": "Cyan Button",
+      "kind": "button",
+      "refersTo": "button-cyan",
+      "description": "إجراء طلب عرض سعر؛ اللون بحسب سطح الاستخدام.",
+      "html": "<a class=\"ds-button\" href=\"#enquiry\" dir=\"rtl\"><span>اطلب عرض سعر</span><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:52px;padding:14px 22px;border:0;border-radius:8px;font-weight:500;font-size:.94rem;line-height:1.65;text-align:center;text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,transform .14s;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-button:active{transform:translateY(1px)}.ds-button:disabled{cursor:default;opacity:.4;}.ds-button{background:var(--brand-cyan,#25b9e3);color:var(--text-primary,#182c46)}.ds-button:hover{background:#96e2fa}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-button,.ds-link,.ds-filter,.ds-row .ds-arrow{transition-duration:.01ms!important;}}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "إجراء طلب عرض سعر؛ اللون بحسب سطح الاستخدام.",
+      "html": "<a class=\"ds-button\" href=\"#enquiry\" dir=\"rtl\"><span>اطلب عرض سعر</span><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:52px;padding:14px 22px;border:0;border-radius:8px;font-weight:500;font-size:.94rem;line-height:1.65;text-align:center;text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,transform .14s;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-button:active{transform:translateY(1px)}.ds-button:disabled{cursor:default;opacity:.4;}.ds-button{background:#fff;color:var(--brand-navy,#253b59)}.ds-button:hover{background:#eaf6fc}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}.ds-button:focus-visible{outline-color:var(--brand-ice,#96e2fa);}@media(prefers-reduced-motion:reduce){.ds-button,.ds-link,.ds-filter,.ds-row .ds-arrow{transition-duration:.01ms!important;}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "رابط نصي يتأكد بالتسطير عند المرور.",
+      "html": "<a href=\"#details\" class=\"ds-link\" dir=\"rtl\">عرض التفاصيل<svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:12px;min-height:48px;color:var(--brand-blue,#025d9c);font-weight:500;font-size:.94rem;background:none;padding:0;text-align:start;text-decoration:none;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-link:hover{text-decoration:underline;text-underline-offset:5px}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}"
+    },
+    {
+      "name": "Category Filter",
+      "kind": "chip",
+      "refersTo": "category-filter",
+      "description": "حالتا الفئة غير المحددة والمحددة؛ التطبيق يبدل aria-pressed.",
+      "html": "<div dir=\"rtl\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">كل الحالات</button> <button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">المفاصل</button></div>",
+      "css": ".ds-filter{padding:12px 16px;min-height:48px;border:1px solid #a5b8ca;border-radius:8px;background:#fff;color:var(--text-secondary,#4b6078);font-size:.88rem;line-height:1.7;cursor:pointer;transition:background-color .18s;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-filter:hover{background:var(--surface-subtle,#f4f7fa)}.ds-filter[aria-pressed=\"true\"]{background:var(--brand-blue,#025d9c);border-color:var(--brand-blue,#025d9c);color:#fff}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-button,.ds-link,.ds-filter,.ds-row .ds-arrow{transition-duration:.01ms!important;}}"
+    },
+    {
+      "name": "Enquiry Field",
+      "kind": "input",
+      "refersTo": "enquiry-field",
+      "description": "حقل بتسمية ظاهرة والتحقق الأصلي للمتصفح.",
+      "html": "<div class=\"ds-field-group\" dir=\"rtl\"><label for=\"ds-name\">الاسم</label><input class=\"ds-field\" id=\"ds-name\" name=\"name\" required placeholder=\"اكتب اسمك\" /></div>",
+      "css": ".ds-field-group{display:flex;flex-direction:column;color:var(--text-primary,#182c46);font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-field-group label{font-size:.88rem;font-weight:500;margin-bottom:10px}.ds-field{width:100%;min-width:0;border:1px solid #708399;background:#fff;border-radius:8px;padding:14px 12px;font-size:1rem;color:var(--text-primary,#182c46);min-height:52px;margin-bottom:24px;line-height:1.8;caret-color:var(--brand-blue,#025d9c);font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-field::placeholder{color:var(--text-secondary,#4b6078);opacity:1}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "refersTo": "desktop-navigation",
+      "description": "رابط الصفحة الحالية بالأزرق مع خط سفلي؛ يظهر في التطبيق من 1100px.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"استكشف\" dir=\"rtl\"><a href=\"#about\" aria-current=\"page\">عن الشركة</a><a href=\"#products\">التخصصات والمنتجات</a><a href=\"#cases\">الحالات</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:20px;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-nav a{display:flex;align-items:center;min-height:48px;font-size:.77rem;color:var(--text-secondary,#4b6078);position:relative;text-decoration:none}.ds-nav a:hover,.ds-nav a[aria-current=\"page\"]{color:var(--brand-blue,#025d9c)}.ds-nav a[aria-current=\"page\"]:after{content:\"\";position:absolute;inset-inline:0;inset-block-end:1px;height:2px;background:var(--brand-blue,#025d9c)}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}"
+    },
+    {
+      "name": "Case Card",
+      "kind": "card",
+      "refersTo": "case-card",
+      "description": "معاينة الغلاف النصي الفعلي؛ الصورة الأصلية الكاملة تأتي فوقه في التطبيق.",
+      "html": "<article class=\"ds-case\" dir=\"rtl\"><div class=\"ds-case-body\"><h3>حالة جراحية</h3><p class=\"ds-case-type\">المفاصل</p><p>ملخص الحالة المتاح في المصدر.</p><button class=\"ds-link\" type=\"button\">عرض التفاصيل<svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></button></div></article>",
+      "css": ".ds-case{border:1px solid var(--border,#dce4eb);border-radius:14px;overflow:hidden;min-width:0;background:#fff;color:var(--text-primary,#182c46);font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-case-body{padding:22px}.ds-case h3{margin:0;font-size:1.15rem;font-weight:600;line-height:1.5}.ds-case p{margin:12px 0 0;font-size:.9rem;line-height:1.85;color:var(--text-secondary,#4b6078)}.ds-case .ds-case-type{font-size:.8rem;color:var(--brand-blue,#025d9c);margin-top:8px;margin-bottom:0}.ds-link{display:inline-flex;align-items:center;gap:12px;min-height:48px;color:var(--brand-blue,#025d9c);font-weight:500;font-size:.94rem;background:none;border:0;padding:0;text-align:start;margin-top:12px;cursor:pointer;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-link:hover{text-decoration:underline;text-underline-offset:5px}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}"
+    },
+    {
+      "name": "Specialty Row",
+      "kind": "custom",
+      "refersTo": "specialty-row",
+      "description": "صف مفتوح بفواصل وسهم دائري؛ المعاينة تستخدم ترتيب الموبايل.",
+      "html": "<a class=\"ds-row\" dir=\"rtl\" href=\"#specialty\"><h3>مستلزمات العمود الفقري</h3><span class=\"ds-arrow\"><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7M5 12h14\"/></svg></span><p>التخصص والمادة المتاحة من المصادر.</p></a>",
+      "css": ".ds-row{display:grid;grid-template-columns:1fr 48px;gap:16px;padding-block:24px;border-block:1px solid var(--border,#dce4eb);align-items:start;color:var(--text-primary,#182c46);text-decoration:none;font-family:\"Alexandria\",\"Segoe UI\",Arial,sans-serif;}.ds-row h3{margin:0;font-size:1.12rem;font-weight:600;line-height:1.5}.ds-row p{grid-column:1/-1;margin:0;font-size:.9rem;max-width:680px;line-height:1.85;color:var(--text-secondary,#4b6078)}.ds-arrow{display:inline-flex;width:48px;height:48px;border:1px solid #b9c9d8;border-radius:50%;align-items:center;justify-content:center;color:var(--brand-blue,#025d9c);transition:background-color .18s,color .18s}.ds-row:hover .ds-arrow{background:var(--brand-blue,#025d9c);color:#fff;border-color:var(--brand-blue,#025d9c)}.ds-button:focus-visible,.ds-link:focus-visible,.ds-filter:focus-visible,.ds-field:focus-visible,.ds-nav a:focus-visible,.ds-row:focus-visible{outline:3px solid var(--brand-blue,#025d9c);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-button,.ds-link,.ds-filter,.ds-row .ds-arrow{transition-duration:.01ms!important;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "الوضوح الطبي المهني",
+    "overview": "هذا وصف للحالة البصرية المنفذة محلياً بعد المراجعة، وليس اسماً لاتجاه اختاره المستخدم من تصورات صور. يتقدم المحتوى الطبي والإجراء العملي داخل أسطح فاتحة؛ تمنح الكتل الكحلية الهوية حضوراً واضحاً، ويظل السماوي تمييزاً محدوداً.\n\nالعربية والإنكليزية تشتركان في الخط والبنية والأصول. الصفوف المفتوحة للتخصصات، والشعارات الكاملة، وبطاقات الحالات ذات الصور غير المقصوصة تمنح كل نوع محتوى شكله المناسب. المرجع التأسيسي الأوسع هو [DESIGN-SYSTEM.md](DESIGN-SYSTEM.md)؛ هنا توثق قيم CSS وسلوك React الفعليان. لا يوجد comp صور معتمد أو ادعاء مطابقة له، ولم تُنشر النسخة.",
+    "keyCharacteristics": [
+      "وضوح مهني ومساحات قراءة فاتحة.",
+      "هوية كحلية وأزرق للإجراء وسماوي محدود.",
+      "بنية تبدأ بالموبايل وتتبع اتجاه اللغة.",
+      "صور سريرية وشعارات أصلية، وحركة قصيرة مرتبطة بالمهمة."
+    ],
+    "rules": [
+      {
+        "name": "The Cyan Contrast Rule",
+        "body": "يرافق الزر السماوي نص text-primary الداكن، ويحمل الزر الأزرق نصاً أبيض.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** حافظ على التباين: نص داكن على السماوي وأبيض على الأزرق.",
+      "**Do** ابنِ بالمسافات المنطقية واختبر العربية والإنكليزية بطول نصهما الفعلي.",
+      "**Do** اعرض صور الحالات والشعارات كاملة، واترك تفاصيل الحالات للطلب الصريح.",
+      "**Do** احصر Anime.js بجذر المكون ونظف النطاق واحترم تخفيف الحركة."
+    ],
+    "donts": [
+      "**Don't** تورث الشكل القديم أو تعيد رسم اللوغو أو تغير ألوان الشعارات.",
+      "**Don't** تقص المحتوى السريري أو تضع عليه نصوصاً وأزراراً.",
+      "**Don't** تضف ظلالاً أو أسطحاً معدنية إلى القراءة لمجرد محاكاة لمعان اللوغو.",
+      "**Don't** تجعل الحركة شرطاً للوصول للمحتوى أو تكرر ظهوراً متحركاً على كل قسم.",
+      ""
+    ]
+  }
+}
