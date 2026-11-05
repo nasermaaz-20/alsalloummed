@@ -1,0 +1,11 @@
+{
+  "kind": "deterministic-brand-composition",
+  "dimensions": [
+    1200,
+    630
+  ],
+  "logoSource": "docs/sources/DOC-20261020-WA0098.pdf",
+  "photoSource": "orthopedic-preparation.webp.json",
+  "fontSource": "public/fonts/alexandria.css",
+  "note": "Rendered bilingual brand card using existing company logo, typography, and illustrative scene. No new photographic content generated."
+}

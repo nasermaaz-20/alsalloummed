@@ -12,7 +12,6 @@ import {
   Mail,
   MapPin,
   MessageCircle,
-  Download,
   Plus,
   Minus,
   ChevronLeft,
@@ -34,6 +33,10 @@ import {
   type SurgicalCase,
 } from './content';
 import { isLocale, preferredLocale, saveLocale, type Locale } from './locale';
+import { mountPageMotion } from './motion';
+import { LoadingImage } from './LoadingImage';
+import { useInitialLoading } from './boot';
+import { applyPageMeta } from './seo';
 
 const navigation = ['about', 'products', 'partners', 'cases', 'contact'] as const;
 const image = (name: string) => `/assets/${name}`;
@@ -74,7 +77,14 @@ function Logo({ locale, footer = false }: { locale: Locale; footer?: boolean }) 
       to={`/${locale}`}
       aria-label={brand[locale]}
     >
-      <img src={image('alsalloum-logo.png')} alt="" width="56" height="56" />
+      <img
+        src={image('alsalloum-logo-small.webp')}
+        alt=""
+        width="56"
+        height="56"
+        data-critical-image={footer ? undefined : ''}
+        loading={footer ? 'lazy' : 'eager'}
+      />
       <span>
         <strong>{brand[locale]}</strong>
         <small>{ui[locale].tagline}</small>
@@ -288,7 +298,6 @@ function Footer({ locale }: { locale: Locale }) {
         <div className="footer-brand">
           <Logo locale={locale} footer />
           <p>{t.footerNote}</p>
-          <p className="footer-registration">{t.registered}</p>
         </div>
         <nav aria-label={t.explore}>
           <h2>{t.explore}</h2>
@@ -328,6 +337,15 @@ function Footer({ locale }: { locale: Locale }) {
         <span>
           © {new Date().getFullYear()} {t.rights}
         </span>
+        <a
+          className="footer-credit"
+          href="https://wa.me/963994074650"
+          lang="en"
+          dir="ltr"
+          {...externalProps}
+        >
+          Made by ENG.OMAR ALAKILI
+        </a>
         <span>{locale === 'ar' ? 'حلب، سوريا' : 'Aleppo, Syria'}</span>
       </div>
     </footer>
@@ -347,9 +365,17 @@ function ContactCTA({ locale }: { locale: Locale }) {
     </section>
   );
 }
-function CompanyMark({ company }: { company: (typeof companies)[number] }) {
+function CompanyMark({ company, locale }: { company: (typeof companies)[number]; locale: Locale }) {
   return company.image ? (
-    <img src={image(company.image)} alt={company.name} width="260" height="140" loading="lazy" />
+    <LoadingImage
+      locale={locale}
+      className={company.id === 'solid' ? 'company-logo-solid' : undefined}
+      src={image(company.image)}
+      alt={company.name}
+      width="260"
+      height="140"
+      loading="lazy"
+    />
   ) : (
     <span className="company-text-name" lang="en">
       {company.name}
@@ -377,12 +403,12 @@ function CompanyGrid({
               to={`/${locale}/partners#${company.id}`}
               className="company-mark"
             >
-              <CompanyMark company={company} />
+              <CompanyMark company={company} locale={locale} />
             </Link>
           ) : (
             <article className="company-card" key={company.id} id={company.id}>
               <div className="company-mark">
-                <CompanyMark company={company} />
+                <CompanyMark company={company} locale={locale} />
               </div>
               <div className="company-content">
                 <h2 lang="en">{company.name}</h2>
@@ -425,7 +451,8 @@ function CaseGrid({
             onClick={() => onOpen(entry)}
             aria-label={`${t.viewCase}: ${l(entry.title, locale)}`}
           >
-            <img
+            <LoadingImage
+              locale={locale}
               src={image(entry.image)}
               alt={t.imageAlt + l(entry.title, locale)}
               width="900"
@@ -474,12 +501,16 @@ function Home({ locale, onOpen }: { locale: Locale; onOpen: (entry: SurgicalCase
             </div>
           </div>
           <figure className="hero-visual" data-intro>
-            <img
+            <LoadingImage
+              locale={locale}
+              critical
               className="hero-image"
-              src={image('bg1.jpg')}
+              src={image('orthopedic-preparation.webp')}
+              srcSet={`${image('orthopedic-preparation-640.webp')} 640w, ${image('orthopedic-preparation.webp')} 1280w`}
+              sizes="(min-width: 900px) 48vw, 100vw"
               alt={t.heroAlt}
-              width="931"
-              height="796"
+              width="1280"
+              height="853"
               fetchPriority="high"
             />
             <figcaption>
@@ -555,8 +586,9 @@ function Home({ locale, onOpen }: { locale: Locale; onOpen: (entry: SurgicalCase
       <section className="section story-section">
         <div className="container story-inner">
           <div className="story-brand">
-            <img
-              src={image('alsalloum-logo.png')}
+            <LoadingImage
+              locale={locale}
+              src={image('alsalloum-logo-web.webp')}
               alt={brand[locale]}
               width="716"
               height="716"
@@ -602,11 +634,6 @@ function About({ locale }: { locale: Locale }) {
           <div>
             <h2>{t.missionTitle}</h2>
             <p className="large-paragraph">{t.missionDescription}</p>
-            <a className="button button-primary" href="/documents/company-profile.pdf" download>
-              {t.profile}
-              <Download size={18} aria-hidden="true" />
-            </a>
-            <span className="download-hint">{t.profileHint}</span>
           </div>
           <aside className="company-facts">
             <div>
@@ -620,10 +647,6 @@ function About({ locale }: { locale: Locale }) {
             <div>
               <span>{locale === 'ar' ? 'سنة التأسيس' : 'Established'}</span>
               <strong>2007</strong>
-            </div>
-            <div>
-              <span>{locale === 'ar' ? 'السجل التجاري' : 'Commercial registration'}</span>
-              <strong>96729</strong>
             </div>
           </aside>
         </div>
@@ -832,39 +855,31 @@ function Contact({ locale }: { locale: Locale }) {
       <section className="section">
         <div className="container contact-layout">
           <div className="contact-details">
-            {[
-              {
-                name: t.manager,
-                role: t.managerRole,
-                phone: '963935584468',
-                display: '+963 935 584 468',
-              },
-              {
-                name: t.representative,
-                role: t.representativeRole,
-                phone: '963941370604',
-                display: '+963 941 370 604',
-              },
-            ].map((person) => (
-              <article className="contact-person" key={person.phone}>
-                <p>{person.role}</p>
-                <h2>{person.name}</h2>
-                <a href={`tel:+${person.phone}`} className="contact-number">
-                  <bdi>{person.display}</bdi>
-                </a>
-                <div className="person-links">
-                  <a href={whatsapp(locale, '', person.phone)} {...externalProps}>
-                    <MessageCircle size={18} aria-hidden="true" />
-                    {t.whatsapp}
-                    <ArrowUpRight size={16} aria-hidden="true" />
+            <article className="contact-person">
+              <p>{t.managerRole}</p>
+              <h2>{t.manager}</h2>
+              {[
+                { phone: '963935584468', display: '+963 935 584 468' },
+                { phone: '963996417911', display: '+963 996 417 911' },
+              ].map(({ phone, display }) => (
+                <div className="contact-method" key={phone}>
+                  <a href={`tel:+${phone}`} className="contact-number">
+                    <bdi>{display}</bdi>
                   </a>
-                  <a href={`tel:+${person.phone}`}>
-                    <Phone size={17} aria-hidden="true" />
-                    {t.call}
-                  </a>
+                  <div className="person-links">
+                    <a href={whatsapp(locale, '', phone)} {...externalProps}>
+                      <MessageCircle size={18} aria-hidden="true" />
+                      {t.whatsapp}
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </a>
+                    <a href={`tel:+${phone}`}>
+                      <Phone size={17} aria-hidden="true" />
+                      {t.call}
+                    </a>
+                  </div>
                 </div>
-              </article>
-            ))}
+              ))}
+            </article>
             <div className="contact-info">
               <Mail size={22} aria-hidden="true" />
               <div>
@@ -1017,7 +1032,8 @@ function CaseDialog({
       {selected ? (
         <div className="case-dialog-content">
           <div className={`dialog-image ${zoomed ? 'is-zoomed' : ''}`} ref={imagePanel}>
-            <img
+            <LoadingImage
+              locale={locale}
               src={image(selected.image)}
               alt={t.imageAlt + l(selected.title, locale)}
               width="900"
@@ -1077,16 +1093,12 @@ function NotFound({ locale }: { locale: Locale }) {
 function Site({ locale, page }: { locale: Locale; page: string }) {
   const location = useLocation();
   const root = useRef<HTMLDivElement>(null);
+  const bootReady = useInitialLoading(root);
   const [selected, setSelected] = useState<SurgicalCase | null>(null);
   const t = ui[locale];
   useLayoutEffect(() => {
-    document.documentElement.lang = locale;
-    document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
-    const pageTitle = page in t ? t[page as keyof typeof t] : t.notFound;
-    document.title =
-      page === 'home' ? `${brand[locale]} | ${t.tagline}` : `${pageTitle} | ${brand[locale]}`;
-    document.querySelector('meta[name="description"]')?.setAttribute('content', t.heroDescription);
-  }, [locale, page, t]);
+    applyPageMeta(locale, page);
+  }, [locale, page]);
   useEffect(() => {
     setSelected(null);
     if (location.hash) {
@@ -1094,15 +1106,8 @@ function Site({ locale, page }: { locale: Locale; page: string }) {
         document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'start' }),
       );
     } else window.scrollTo({ top: 0, behavior: 'instant' });
-    const scope = createScope({
-      root,
-      mediaQueries: { reduceMotion: '(prefers-reduced-motion: reduce)' },
-    }).add((self) => {
-      if (self?.matches.reduceMotion) return;
-      animate('[data-intro]', { y: [12, 0], duration: 620, delay: stagger(55), ease: 'outExpo' });
-    });
-    return () => scope.revert();
-  }, [location.pathname, location.hash, locale]);
+    if (root.current && bootReady) return mountPageMotion(root.current, locale);
+  }, [location.pathname, location.hash, locale, bootReady]);
   let content: ReactNode;
   switch (page) {
     case 'home':

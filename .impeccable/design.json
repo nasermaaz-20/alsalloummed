@@ -241,8 +241,13 @@
     "motion": [
       {
         "name": "intro",
-        "value": "620ms; translateY 12px → 0; stagger 55ms; outExpo",
-        "purpose": "عناصر data-intro؛ نطاق محلي ينظف بـscope.revert()."
+        "value": "Timeline: headline 760ms / 32px; image 780ms / 22px / clip-path 14% → 0; supporting copy stagger 70ms; outExpo",
+        "purpose": "افتتاحية أوضح حسب ملاحظة المستخدم؛ src/motion.ts، وتنظيف عبر scope.revert()."
+      },
+      {
+        "name": "scroll-entry",
+        "value": "600–680ms; specialty X 12px; partner detail X 18px; cases Y 24px; logo stagger 65ms",
+        "purpose": "دخول مرة عند الوصول للعنصر؛ لا قص أو تكبير لصور الحالات، وفصل المراقبات عند التنقل أو تقليل الحركة."
       },
       {
         "name": "mobile-menu",
@@ -258,6 +263,16 @@
         "name": "state-transition",
         "value": "background-color 180ms; color 180ms; transform 140ms",
         "purpose": "الأزرار؛ الضغط يزيح 1px للأسفل."
+      },
+      {
+        "name": "initial-loading",
+        "value": "critical image/font wait capped at 2200ms; independent recovery 3500ms; exit 180ms",
+        "purpose": "شاشة بداية بهوية الشركة دون نسبة تقدم مصطنعة؛ تبدأ افتتاحية الصفحة بعد إزالتها."
+      },
+      {
+        "name": "image-loading",
+        "value": "skeleton shimmer 1400ms; loaded reveal 420ms / opacity .35 → 1 / blur 6px → 0",
+        "purpose": "تحميل مستقل لكل صورة، ومقاسات محفوظة وبديل عند الفشل، مع احترام تقليل الحركة."
       },
       {
         "name": "reduced-motion",
@@ -369,7 +384,7 @@
       "وضوح مهني ومساحات قراءة فاتحة.",
       "هوية كحلية وأزرق للإجراء وسماوي محدود.",
       "بنية تبدأ بالموبايل وتتبع اتجاه اللغة.",
-      "صور سريرية وشعارات أصلية، وحركة قصيرة مرتبطة بالمهمة."
+      "صور حالات أصلية وشعارات رسمية، ومشهد افتتاحي مولّد لتحضير أدوات الجراحة، وحركة قصيرة مرتبطة بالمهمة."
     ],
     "rules": [
       {

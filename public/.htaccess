@@ -1,0 +1,7 @@
+# Apache / cPanel: publish the contents of dist/ to the domain document root.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^((ar|en)(/(about|products|partners|cases|contact))?)/?$ $1/index.html [L]
+</IfModule>

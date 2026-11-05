@@ -54,6 +54,74 @@ img {
   max-width: 100%;
   height: auto;
 }
+.image-frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.image-skeleton {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: var(--surface-subtle);
+  overflow: hidden;
+}
+.js-enhanced .image-frame[data-state='loading'] > img {
+  opacity: 0;
+}
+.js-enhanced .image-frame[data-state='loading'] > .image-skeleton {
+  display: block;
+}
+.image-skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 15%, #dce9f3 48%, transparent 80%);
+  transform: translateX(-100%);
+  animation: image-shimmer 1.4s ease-in-out infinite;
+}
+@keyframes image-shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+.image-frame[data-state='error'] > img {
+  visibility: hidden;
+}
+.image-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--surface-subtle);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.company-mark > .image-frame,
+.story-brand > .image-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog-image > .image-frame {
+  flex-shrink: 0;
+  height: 100%;
+}
+.dialog-image.is-zoomed > .image-frame {
+  width: 200%;
+  height: auto;
+}
+.dialog-image.is-zoomed > .image-frame > img {
+  width: 100%;
+}
 button svg,
 a svg {
   flex-shrink: 0;
@@ -715,10 +783,6 @@ textarea {
   margin-top: 18px;
   max-width: 380px;
 }
-.footer-brand .footer-registration {
-  font-size: 0.78rem;
-  margin-top: 12px;
-}
 .site-footer nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -782,6 +846,17 @@ textarea {
   font-size: 0.72rem;
   color: #b5c7da;
   line-height: 1.9;
+  align-items: center;
+}
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.footer-credit:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 .site-footer :focus-visible {
   outline-color: var(--brand-ice);
@@ -1036,6 +1111,10 @@ textarea {
   max-width: 240px;
   height: 94px;
 }
+.company-mark img.company-logo-solid {
+  width: 139px;
+  height: auto;
+}
 .company-content {
   padding: 26px;
 }
@@ -1083,6 +1162,9 @@ textarea {
   min-height: 48px;
   align-items: center;
   margin-top: 8px;
+}
+.contact-method + .contact-method {
+  margin-top: 14px;
 }
 .person-links {
   display: flex;
@@ -1414,17 +1496,6 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
-  .company-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .company-card:first-child {
-    grid-column: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-  }
-  .company-card:first-child .company-mark img {
-    max-width: 300px;
-  }
   .case-dialog-content {
     grid-template-columns: 1.1fr 1fr;
   }
@@ -1442,6 +1513,13 @@ textarea {
   }
 }
 @media (min-width: 900px) {
+  .company-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  }
+  .company-card .company-mark img {
+    max-width: 300px;
+  }
   .container {
     width: calc(100% - 64px);
   }

@@ -21,7 +21,7 @@ export const ui = {
       'منذ 2007، نوفّر للأطباء والمشافي مستلزمات الجراحة العظمية والعصبية، ونبني تعاوناً أساسه الخبرة وسرعة الاستجابة.',
     heroCaption: 'تجهيزات تدعم عمل الطبيب، في الوقت الذي يحتاجها.',
     established: 'من حلب، منذ 2007',
-    heroAlt: 'صورة توضيحية لطبيب وتقنيات جراحة العظام',
+    heroAlt: 'مشهد توضيحي لتحضير أدوات جراحة العظام على صينية تجهيز جراحية',
     expertiseTitle: 'اختصاصات واضحة.\nتجهيزات تخدم احتياجك.',
     expertiseDescription:
       'مجالات عملنا تجمع مستلزمات المفاصل والتثبيت العظمي والعمود الفقري. اختر المجال لتتعرف على التفاصيل والتعاونات المرتبطة به.',
@@ -47,7 +47,6 @@ export const ui = {
     explore: 'استكشف الموقع',
     follow: 'تابعنا',
     rights: 'السلوم الطبية. جميع الحقوق محفوظة.',
-    registered: 'السجل التجاري: 96729',
     menu: 'افتح القائمة',
     close: 'إغلاق',
     skip: 'انتقل إلى المحتوى',
@@ -65,12 +64,10 @@ export const ui = {
     humanMore: 'تفاصيل المسيرة والدور الإنساني',
     hospitalsTitle: 'من المشافي المذكورة في ملف الشركة',
     humanFull:
-      'مع انطلاق الثورة السورية، اتخذت الشركة وصاحبها موقفاً إلى جانب الشعب السوري. ويذكر ملف الشركة اعتقال صاحبها من بداية 2012 حتى نهاية 2013، وتأثر النشاط واقتصاره على منبج خلال تلك الفترة. وبعد خروجه أعاد إحياء العمل في مناطق خارج سيطرة النظام السابق، مع تقديم خدمات مجانية للجرحى والمتضررين. واستمر هذا الدور خلال زلزال 2023، ثم توسع النشاط وأعيد تسجيل الشركة في حلب عام 2025.',
+      'مع انطلاق الثورة السورية، اتخذت الشركة وصاحبها موقفاً إلى جانب الشعب السوري. ويذكر ملف الشركة اعتقال صاحبها من بداية 2012 حتى نهاية 2013، وتأثر النشاط واقتصاره على منبج خلال تلك الفترة. وبعد خروجه أعاد إحياء العمل في مناطق خارج سيطرة النظام السابق، مع تقديم خدمات مجانية للجرحى والمتضررين. واستمر هذا الدور خلال زلزال 2023، ثم توسع النشاط عام 2025.',
     governmentTitle: 'جاهزون لتعاون يخدم القطاع الصحي.',
     governmentDescription:
       'تضع الشركة خبرتها وإمكاناتها لتجهيز المشافي الحكومية، مع تقديم أسعار تفضيلية وسرعة في التوريد ودعم فني واستشاري، وإعطاء الأولوية للمناطق الأكثر حاجة والمبادرات الإنسانية.',
-    profile: 'حمّل الملف التعريفي',
-    profileHint: 'PDF · عربي',
     headquarters: 'حلب، حي الجميلية، سوريا',
     productsTitle: 'تجهيزات لكل مجال،\nوتفاصيل تهم الطبيب.',
     productsDescription:
@@ -96,12 +93,9 @@ export const ui = {
     previous: 'الحالة السابقة',
     next: 'الحالة التالية',
     contactTitle: 'حديث واحد،\nيبدأ منه التعاون.',
-    contactDescription:
-      'تواصل مع مدير الشركة أو مندوبنا في حمص، وأخبرنا عن احتياجات المشفى أو التجهيزات المطلوبة.',
+    contactDescription: 'تواصل مع مدير الشركة، وأخبرنا عن احتياجات المشفى أو التجهيزات المطلوبة.',
     manager: 'حسن السلوم',
     managerRole: 'مدير الشركة',
-    representative: 'مهدي عبدالمجيد الإسماعيل',
-    representativeRole: 'مندوب الشركة في حمص',
     whatsapp: 'تواصل عبر واتساب',
     call: 'اتصال هاتفي',
     email: 'البريد الإلكتروني',
@@ -142,7 +136,8 @@ export const ui = {
       'Supporting doctors and hospitals with orthopedic and neurosurgical supplies since 2007, through experience, collaboration, and responsive service.',
     heroCaption: 'Equipping medical professionals for the work ahead.',
     established: 'From Aleppo, since 2007',
-    heroAlt: 'Illustrative image of a doctor and orthopedic surgical technology',
+    heroAlt:
+      'Illustrative scene of orthopedic instruments being arranged on a surgical preparation tray',
     expertiseTitle: 'Focused specialties.\nPurposeful preparation.',
     expertiseDescription:
       'Our work brings together joint replacement, bone fixation, and spinal supplies. Explore each specialty and its related collaborations.',
@@ -169,7 +164,6 @@ export const ui = {
     explore: 'Explore',
     follow: 'Follow us',
     rights: 'Alsalloum Medical. All rights reserved.',
-    registered: 'Commercial registration: 96729',
     menu: 'Open navigation',
     close: 'Close',
     skip: 'Skip to content',
@@ -187,12 +181,10 @@ export const ui = {
     humanMore: 'Read the full journey and humanitarian account',
     hospitalsTitle: 'Hospitals mentioned in our company profile',
     humanFull:
-      'At the start of the Syrian revolution, the company and its owner stood alongside the Syrian people. The company profile describes the owner’s detention from early 2012 to late 2013 and the impact on operations, which became limited to Manbij. After his release, he rebuilt operations in areas outside the former regime’s control, providing free services to injured and affected people. This work continued during the 2023 earthquake. The company later expanded and re-registered in Aleppo in 2025.',
+      'At the start of the Syrian revolution, the company and its owner stood alongside the Syrian people. The company profile describes the owner’s detention from early 2012 to late 2013 and the impact on operations, which became limited to Manbij. After his release, he rebuilt operations in areas outside the former regime’s control, providing free services to injured and affected people. This work continued during the 2023 earthquake. The company later expanded its operations in 2025.',
     governmentTitle: 'Ready to support the health sector.',
     governmentDescription:
       'The company offers its experience to equip public hospitals, with preferential pricing, responsive supply, technical and advisory support, and priority for areas most in need and humanitarian initiatives.',
-    profile: 'Download company profile',
-    profileHint: 'PDF · Arabic',
     headquarters: 'Al-Jamiliyah, Aleppo, Syria',
     productsTitle: 'Focused supplies.\nDetails that matter.',
     productsDescription:
@@ -220,11 +212,9 @@ export const ui = {
     next: 'Next case',
     contactTitle: 'A conversation starts\nthe collaboration.',
     contactDescription:
-      'Speak with our company director or our representative in Homs about your hospital’s needs and the supplies you are looking for.',
+      'Speak with our company director about your hospital’s needs and the supplies you are looking for.',
     manager: 'Hassan Alsalloum',
     managerRole: 'Company director',
-    representative: 'Mahdi Abdulmajid Al-Ismail',
-    representativeRole: 'Company representative in Homs',
     whatsapp: 'Contact on WhatsApp',
     call: 'Call',
     email: 'Email',
@@ -301,7 +291,7 @@ export const companies = [
   {
     id: 'ortonom',
     name: 'Ortono Medical',
-    image: 'ort.jpg',
+    image: 'ortonom-logo.svg',
     url: 'https://ortonom.com.tr/',
     specialty: { ar: 'مفاصل الورك والركبة', en: 'Hip & knee systems' },
     description: {
@@ -312,7 +302,7 @@ export const companies = [
   {
     id: 'spineway',
     name: 'Spineway',
-    image: 'spineway.jpg',
+    image: 'spineway-logo.svg',
     url: 'https://spineway.com/',
     specialty: { ar: 'مستلزمات العمود الفقري', en: 'Spinal surgery supplies' },
     description: {
@@ -323,8 +313,8 @@ export const companies = [
   {
     id: 'green',
     name: 'Green',
-    image: null,
-    url: null,
+    image: 'green-logo.png',
+    url: 'https://greensurgicals.com/index.php',
     specialty: { ar: 'مواد التثبيت العظمي', en: 'Bone fixation materials' },
     description: {
       ar: 'مواد مخصصة لعمليات التثبيت العظمي، ضمن مجالات تعاون السلوم الطبية.',
@@ -334,7 +324,7 @@ export const companies = [
   {
     id: 'solid',
     name: 'Solid',
-    image: 'solid.jpg',
+    image: 'solid-logo.png',
     url: 'https://www.solidort.com/en/home/',
     specialty: { ar: 'من شركات التعاون', en: 'Among our collaborators' },
     description: {
@@ -464,10 +454,10 @@ export const history = [
   },
   {
     year: '2025',
-    title: { ar: 'تسجيل جديد وتوسع', en: 'Re-registration and expansion' },
+    title: { ar: 'توسع العمل', en: 'Expanding operations' },
     body: {
-      ar: 'إعادة التسجيل في حلب في 7 آب 2025 بالسجل التجاري 96729، وتوسع العمل إلى حمص.',
-      en: 'Re-registered in Aleppo on 7 August 2025 under registration 96729, with expansion to Homs.',
+      ar: 'توسع العمل إلى حمص.',
+      en: 'Operations expanded to Homs.',
     },
   },
 ];

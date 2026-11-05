@@ -26,16 +26,21 @@ const context = await browser.newContext({
 const page = await context.newPage();
 page.on('pageerror', (error) => errors.push(error.message));
 page.on('console', (message) => {
-  if (message.type() === 'error') errors.push(message.text());
+  const resource = message.location().url;
+  const expected404 = resource === `${base}/ar/unknown-page` && message.text().includes('404');
+  if (message.type() === 'error' && !expected404) errors.push(`${message.text()} ${resource}`);
 });
 page.on('response', (response) => {
-  if (response.status() >= 400 && response.url().startsWith(base))
+  const expected404 =
+    response.status() === 404 && new URL(response.url()).pathname === '/ar/unknown-page';
+  if (response.status() >= 400 && response.url().startsWith(base) && !expected404)
     errors.push(`${response.status()}: ${response.url()}`);
 });
 
 async function ready() {
   await page.locator('h1').waitFor();
   await page.evaluate(() => document.fonts.ready);
+  await page.locator('#boot-loader').waitFor({ state: 'detached' });
 }
 async function noOverflow(label) {
   const dimensions = await page.evaluate(() => ({
@@ -109,7 +114,8 @@ try {
   assert.equal(enquiryUrl.pathname, '/963935584468');
   assert.match(enquiryUrl.searchParams.get('text'), /اختبار محلي للمشفى/);
   assert.match(enquiryUrl.searchParams.get('text'), /العمود الفقري/);
-  assert.equal(await page.locator('a[href="tel:+963941370604"]').count(), 2);
+  assert.equal(await page.locator('a[href="tel:+963996417911"]').count(), 2);
+  assert.equal(await page.locator('a[href="tel:+963941370604"]').count(), 0);
   record('WhatsApp enquiry composes correct recipient, specialty, and message without sending');
 
   await page.goto(`${base}/ar/products?category=fixation`);
@@ -167,10 +173,8 @@ try {
   assert.equal(new URL(enPage.url()).pathname, '/en');
   await english.close();
   record('English device language selects English on the first visit');
-  const pdf = await context.request.get(`${base}/documents/company-profile.pdf`);
-  assert.equal(pdf.status(), 200);
-  assert.ok((await pdf.body()).subarray(0, 4).equals(Buffer.from('%PDF')));
-  record('Company profile is a downloadable PDF');
+  assert.equal(await page.locator('a[download], a[href$="company-profile.pdf"]').count(), 0);
+  record('Removed company-profile download is not exposed in the interface');
   await page.goto(`${base}/ar/unknown-page`);
   await ready();
   assert.match(await page.locator('h1').innerText(), /غير موجودة/);
@@ -193,6 +197,33 @@ try {
         .evaluate((node) => node.style.transform),
     )
     .toMatch(/translateY/);
+  await expect
+    .poll(() => motionPage.locator('.hero-visual').evaluate((node) => node.style.clipPath))
+    .toMatch(/inset/);
+  const specialty = motionPage.locator('.specialty-row').first();
+  assert.equal(await specialty.evaluate((node) => node.style.transform), '');
+  await specialty.scrollIntoViewIfNeeded();
+  await expect.poll(() => specialty.evaluate((node) => node.style.transform)).toMatch(/translateX/);
+  await expect.poll(() => specialty.evaluate((node) => node.style.opacity)).toBe('1');
+  await motionPage.emulateMedia({ reducedMotion: 'reduce' });
+  await expect
+    .poll(() => motionPage.locator('h1').evaluate((node) => node.style.transform))
+    .toBe('');
+  await expect.poll(() => specialty.evaluate((node) => node.style.transform)).toBe('');
+  await motionPage.locator('.company-strip').scrollIntoViewIfNeeded();
+  assert.equal(
+    await motionPage
+      .locator('.company-strip .company-mark')
+      .first()
+      .evaluate((node) => node.style.transform),
+    '',
+  );
+  await motionPage.emulateMedia({ reducedMotion: 'no-preference' });
+  await expect
+    .poll(() => motionPage.locator('h1').evaluate((node) => node.style.transform))
+    .toMatch(/translateY/);
+  record('Opening choreography, scroll motion, and live reduced-motion changes work');
+  await motionPage.evaluate(() => window.scrollTo({ top: 0, behavior: 'instant' }));
   await motionPage.getByRole('button', { name: 'افتح القائمة' }).click();
   await motionPage.keyboard.press('Escape');
   await motionPage.goto(`${base}/ar/cases`);

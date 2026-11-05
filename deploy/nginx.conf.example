@@ -1,0 +1,10 @@
+# Include inside your existing server block, after setting root to the deployed dist directory.
+# TLS and domain redirects belong to the hosting server configuration.
+index index.html;
+error_page 404 /404.html;
+location / {
+    try_files $uri $uri/index.html =404;
+}
+location = /404.html {
+    internal;
+}

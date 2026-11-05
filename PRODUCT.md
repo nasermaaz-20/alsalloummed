@@ -20,6 +20,8 @@ Doctors and hospitals learning about Alsalloum Medical, its surgical supply capa
 
 A bilingual Arabic/English company website and product catalogue with requests for quotations through WhatsApp. The primary purpose is introducing the company and its experience to medical professionals.
 
+The user also requested launch preparation and loading states. Builds now pre-render the 12 localized pages as static HTML, with page-specific search/share metadata, sitemap, robots rules, and a genuine 404 page. The app has a bounded initial loading screen and individual image skeleton, loaded, and error states; motion respects reduced-motion preferences. Hosting configuration is prepared, but the production site has not been deployed.
+
 ## Positioning
 
 A Syrian company established in Aleppo in 2007, specializing in supplies for orthopedic and neurosurgical operations. Its supplied company profile describes timely provision of surgical materials, geographic coverage, clinical collaborations, and humanitarian work. These are company-provided facts, not independent certifications.

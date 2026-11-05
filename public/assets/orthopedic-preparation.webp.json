@@ -1,0 +1,10 @@
+{
+  "kind": "ai-generated-illustrative-marketing-image",
+  "generator": "Built-in image_gen",
+  "prompt": "Use case: photorealistic-natural. Asset type: premium editorial hero photograph for Alsalloum Medical, a bilingual Syrian orthopedic surgical supplies company website, replacing an old surgeon collage. Create ONE landscape 3:2 photograph, beautifully art directed yet believable. Scene: a quiet contemporary surgical preparation room, close-up tabletop of a neatly arranged stainless steel orthopedic instrument tray on a clean blue surgical drape; a medical professional's gloved hands at upper right carefully arranging one instrument. Only two natural hands, no faces, no patient, no exposed anatomy, no operation taking place. Select a small coherent number of generic surgical instruments, mechanically plausible, no invented branded implants or particular marketed product. Rich navy blue background #253B59 with soft cyan accents #25B9E3 and silver highlights, gentle cool daylight, tactile brushed metal, clean and precise, subtle depth of field, natural camera optics, realistic restrained lighting. Main subject centered, all important instruments and hands inside central 70% so responsive crops retain them. Fill frame; no on-image typography or blank text panel. No text, no labels, no logo, no watermark, no futuristic holograms, no icons, no graphics, no blood. This is an illustrative marketing scene, not documentation of the company premises or a real surgical case.",
+  "note": "Illustrative surgical preparation scene; not a photograph of Alsalloum Medical premises or a documented surgical case.",
+  "files": [
+    "orthopedic-preparation.webp",
+    "orthopedic-preparation-640.webp"
+  ]
+}
