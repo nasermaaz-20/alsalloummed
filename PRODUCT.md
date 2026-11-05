@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-React with TypeScript and Vite for the local implementation. The original static HTML/CSS/JavaScript site remains archived in `docs/sources/legacy-site/`. Hosting and deployment configuration remain undecided; no production deployment was made.
+React with TypeScript and Vite for the local implementation. The old static site was removed from the active project after preserving a [pre-cleanup snapshot on GitHub](https://github.com/nasermaaz-20/alsalloummed/tree/5ca48e4682e3a04c69b4b20ce161551e4fc0dd83). Hosting configuration is prepared, but the final hosting environment remains undecided; no production deployment was made.
 
 Anime.js is explicitly required by the user as the animation runtime: https://animejs.com/ . Its official React integration uses effect-scoped instances with cleanup; implementation should follow the current official API.
 
@@ -58,9 +58,9 @@ Visitors read company information, inspect supply categories and clinical cases,
 - `docs/PROJECT-CONTEXT.md`: detailed Arabic inventory of approved decisions, source facts, differences, and remaining questions.
 - `docs/sources/Alsalloum Medical-P.pdf`: five-page company profile, visually inspected in full; authoritative for conflicting company data.
 - `docs/sources/DOC-20261020-WA0098.pdf`: new logo, visually inspected.
-- `docs/sources/legacy-site/`: original site with all three code files and 13 images; preserved without changes.
-- `docs/sources/manifest.json`: hashes confirming all 18 archived files matched their originals when captured.
-- Six described clinical cases, three existing manufacturer logos, and an additional unused knee image are available. The archive retains the full original copy.
+- The [GitHub backup](https://github.com/nasermaaz-20/alsalloummed/tree/5ca48e4682e3a04c69b4b20ce161551e4fc0dd83/docs/sources/legacy-site) retains the original static site and its 13 images. These duplicate files are no longer part of the active checkout.
+- `docs/sources/manifest.json`: hashes for the two retained original PDFs. The full earlier manifest is preserved in the backup.
+- The six clinical case images and current manufacturer logos remain in `public/assets/`; obsolete and unused image copies are retained only in the GitHub backup.
 - Manufacturer references do not prove availability of every manufacturer product. No model inventory, verified statistics, testimonials, or certifications have been supplied.
 
 ## Product Principles

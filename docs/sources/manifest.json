@@ -1,92 +1,12 @@
-﻿[
-    {
-        "File":  "legacy-site/alsalloum.css",
-        "SHA256":  "59B660736FE12745E65D397E8883B3BF2CFF7C8E3B78242FEC80B7FAFF3BEACE",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/index.html",
-        "SHA256":  "2E90C09395975BA1120C1BA6F8DAA84FB3B45B729569FFE9B85C3DFE2C9869ED",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/script.js",
-        "SHA256":  "E0D19A4A2357E2AD7B848108662D95B04CF9D155431A80B949D3D6FE3A69873C",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/bg1.jpg",
-        "SHA256":  "0AB84C49FDF25A3824A538736E7E51349DBD365797455DB3C2078C6CA7A31E79",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/logo.jpg",
-        "SHA256":  "B8CA28753C9494410AB62877C31C7D4488A4D8D0E2F27E9ABD8DBEB80B63B3BE",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/menu.png",
-        "SHA256":  "16E7677717540F553EF3EF1E8FE4EC6EE02D72EB24A3123880215E6DEC167A03",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op1.jpg",
-        "SHA256":  "EF1E9A99C39B2B5D3A259CBC15DFA343A83ABBF38E394746C103DD1102F73BFD",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op2.jpg",
-        "SHA256":  "F3B8603EA5E49DB4B988C0E50BE66E83EB5715CF21F4B142C76A26A1F6E5EB17",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op3.jpg",
-        "SHA256":  "92D9031C23B4CA3AB3B61914BDC2C57AB40CB09F461EF49ED5B123F5EFA7A572",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op4.jpg",
-        "SHA256":  "4AF92E6EFB8CB934E2DCDBB7B161BBCB24A54722393DE59CA6A2C5AFDFF6E8F2",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op5.jpg",
-        "SHA256":  "9E14A659B1419F3E7D4DBE83532B6632DDDB4FC87136ECFC8F29E0DF4B5A0393",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/op6.jpg",
-        "SHA256":  "16F2AFCC85E89C5B98C07BB7F281A5AD40FC0E121D8DC293588D91EFEBE6A42B",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/ort.jpg",
-        "SHA256":  "89B7DC80838C1D3D1DF5E76271522EB3109515489A97EDD6673257E14D02C37E",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/pp.jpg",
-        "SHA256":  "086A880D0C8DB1D0CEC55E9D3850D233599E6C7EAB7EDE3244AD61C5A6EBE711",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/solid.jpg",
-        "SHA256":  "E314312F66A60FFA80C2BDB122828A5D5C14EF76C655956113E533CFB9B725A5",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "legacy-site/img/spineway.jpg",
-        "SHA256":  "6121008289B14D1565280B2D32D2087525BCECEDBB3549F71620D9E5F04BFCF6",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "DOC-20261020-WA0098.pdf",
-        "SHA256":  "D2A218A2393239ED773386D18D0EA881F82481181D1991CAF4FF3CCCF12766F5",
-        "MatchesOriginal":  true
-    },
-    {
-        "File":  "Alsalloum Medical-P.pdf",
-        "SHA256":  "EDD7F40CD89CDAB4DD08F770C0388D74D728AD0A493931B905512B8B5C8E6865",
-        "MatchesOriginal":  true
-    }
+[
+  {
+    "File": "DOC-20261020-WA0098.pdf",
+    "SHA256": "D2A218A2393239ED773386D18D0EA881F82481181D1991CAF4FF3CCCF12766F5",
+    "MatchesOriginal": true
+  },
+  {
+    "File": "Alsalloum Medical-P.pdf",
+    "SHA256": "EDD7F40CD89CDAB4DD08F770C0388D74D728AD0A493931B905512B8B5C8E6865",
+    "MatchesOriginal": true
+  }
 ]
